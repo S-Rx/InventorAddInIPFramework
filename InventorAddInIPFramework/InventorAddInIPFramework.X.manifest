@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+  <assemblyIdentity name="InventorAddInIPFramework" version="1.0.0.0"></assemblyIdentity>
+
+  <clrClass clsid="{9d459f91-43b1-4fe0-a3a7-0534f97f60b1}" progid="InventorAddInIPFramework.StandardAddInServer" threadingModel="Both" name="InventorAddInIPFramework.StandardAddInServer" runtimeVersion=""></clrClass>
+
+  <file name="InventorAddInIPFramework.dll" hashalg="SHA1"></file>
+
+</assembly>
