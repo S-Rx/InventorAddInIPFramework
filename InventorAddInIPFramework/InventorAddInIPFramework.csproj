@@ -85,6 +85,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CAddIn.cs" />
+    <Compile Include="Control.cs" />
     <Compile Include="StandardAddInServer.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -112,9 +113,12 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>xcopy "$(SolutionDir)InventorAddIn\*.py"  "$(TargetDir)" /Y
+
 xcopy "E:\Dev\MSVS\InventorAddInIPFramework\InventorAddInIPFramework\Autodesk.InventorAddInIPFramework.Inventor.addin" "C:\ProgramData\Autodesk\Inventor 2016\Addins" /Y			
 </PreBuildEvent>
-    <PostBuildEvent>call "%25VS100COMNTOOLS%25vsvars32"
-			mt.exe -manifest "$(ProjectDir)InventorAddInIPFramework.X.manifest" -outputresource:"$(TargetPath)";#2</PostBuildEvent>
+    <PostBuildEvent>
+call "%25VS100COMNTOOLS%25vsvars32"
+			mt.exe -manifest "$(ProjectDir)InventorAddInIPFramework.X.manifest" -outputresource:"$(TargetPath)";#2
+</PostBuildEvent>
   </PropertyGroup>
 </Project>

@@ -8,7 +8,7 @@ using Microsoft.Scripting.Hosting;
 namespace InvAddIn {
 	internal class CAddIn {
 		public dynamic AddInInstance { get; private set; }
-		string AddInFilePath = "AddInMain.py";
+		string AddInFilePath = "./AddInMain.py";
 		ScriptEngine engine;
 		ScriptScope scope;
 		ScriptSource source;
